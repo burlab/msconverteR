@@ -44,10 +44,14 @@ convert_files <-
     DOCKER_CMD_A <-
       paste0(
         docker_run,
+        '"',
         mount_point,
+        '"',
         ':/data',
         ' -v ',
+        '"',
         mount_out,
+        '"',
         ':/outpath ',
         'chambm/pwiz-skyline-i-agree-to-the-vendor-licenses wine msconvert '
       )
