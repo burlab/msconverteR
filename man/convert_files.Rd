@@ -4,12 +4,7 @@
 \alias{convert_files}
 \title{Covert Files}
 \usage{
-convert_files(
-  files,
-  outpath = NULL,
-  msconvert_args = c("peakPicking true 1-"),
-  docker_args = c()
-)
+convert_files(files, outpath = NULL, msconvert_args = c(), docker_args = c())
 }
 \arguments{
 \item{files}{the absolute filepath vendor specific files to be converted}
